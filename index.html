@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 85vh;
+            /* background-image: url(./Images/Jinxmural-1396248437.webp); */
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-color: #726DA8;
+            color: #2C2C2C;
+        }
+
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            gap: 2em;
+        }
+
+        .item{
+            width: 25%;
+            height: 15em;
+            border-radius: 15px;
+            background-color: #726DA8;
+            color: #2C2C2C;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px #56527e;
+        }
+
+        @media only screen and (max-width:768px){
+            .content{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item{
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--Header/Navbar-->
+        <div class="header">
+            <div class="head">
+                <img src="" alt="Image">
+                <h1>First Last</h1>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--Main Content/Will be changed on different tabs-->
+        <div class="main">
+            <div class="hero">
+                <h1>First Last</h1>
+                <h4>Title</h4>
+            </div>
+
+            <div class="content">
+                <div class="item">
+                    <h2>Web Development</h2>
+                    <p>Experience in CSS, HTML, and JavaScript</p>
+                </div>
+
+                <div class="item">
+                    <h2>Game Development</h2>
+                    <p>Experience in Unity and C#</p>
+                </div>
+
+                <div class="item">
+                    <h2>Video/Image Editing</h2>
+                    <p>Experience in Adobe Photoshop and Adobe Premiere Pro</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <div class="footer">
+            &copy; 2024 First Last. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

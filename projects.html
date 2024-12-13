@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .main{
+            padding: 30px;
+            text-align: center;
+        }
+
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            gap: 2em;
+        }
+
+        .item{
+            width: 25vw;
+            min-height: 15em;
+            border-radius: 15px;
+            background-color: #726DA8;
+            color: #2C2C2C;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            box-shadow: 5px 5px #56527e;
+        }
+
+        .main img{
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .tagContainer{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item > a{
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width:768px){
+            .content{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item{
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--Header/Navbar-->
+        <div class="header">
+            <div class="head">
+                <img src="" alt="Image">
+                <h1>First Last</h1>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--Main Content/Will be changed on different tabs-->
+        <div class="main">
+            <h2>My Projects</h2>
+            <div class="content">
+                <div class="item">
+                    <a href="https://vyxynn.github.io/resume/" target="_blank">
+                        <img src="./Images/resume.png">
+                        <h3>Resume</h3>
+                        <p>Used grid to create a resume for professional use.</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://vyxynn.github.io/blogpage/" target="_blank">
+                        <img src="./Images/blogpage.png">
+                        <h3>Blogpage</h3>
+                        <p>Used grid and flex to create a sample blog webpage.</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://vyxynn.github.io/travelClub/" target="_blank">
+                        <img src="./Images/travelClub.png">
+                        <h3>Travel Club Form</h3>
+                        <p>Used HTML form to create a more complex signup page.</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://vyxynn.github.io/createAccountForm/" target="_blank">
+                        <img src="./Images/createAccountForm.png">
+                        <h3>Create Account Form</h3>
+                        <p>Used HTML form to create a signup page</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://vyxynn.github.io/photoCollage/" target="_blank">
+                        <img src="./Images/photoCollage.png">
+                        <h3>Photo Collage</h3>
+                        <p>Used grid template area to position images to create a collage template.</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://vyxynn.github.io/flexboxRestaurant/" target="_blank">
+                        <img src="./Images/flexboxRestaurant.png">
+                        <h3>Flexbox Restaurant</h3>
+                        <p>Used flexbox to create a sample webpage for a restaurant.</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://vyxynn.github.io/tictactoe/" target="_blank">
+                        <img src="./Images/tictactoe.png">
+                        <h3>TicTacToe</h3>
+                        <p>Used JavaScript to create a tic-tac-toe game.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <div class="footer">
+            &copy; 2024 First Last. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
