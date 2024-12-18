@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #2C2C2C;
+}
+
 /*Container Setup*/
 .container{
     display: grid;
@@ -33,10 +37,6 @@
     padding: 20px;
 }
 
-.main{
-    margin-top: 50px;
-}
-
 .head{
     gap: 100px;
 }
@@ -53,19 +53,19 @@
     color: #FAE1DF
 }
 
+/*Main Styling*/
+.main{
+    margin-top: 50px;
+}
+
 .main a{
     text-decoration: underline;
 }
-
-
-/*Main Styling*/
-
 
 /*Footer Styling*/
 .footer{
     text-align: center;
 }
-
 
 /*Responsive*/
 @media only screen and (max-width:768px){
@@ -73,10 +73,15 @@
         flex-direction: column;
         width: 100vw;
         justify-content: center;
+        gap: 20px;
     }
 
     .nav ul{
         margin-top: 10px;
         padding-left: 25px;
+    }
+
+    .main{
+        margin-top: 300px;
     }
 }
