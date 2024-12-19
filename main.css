@@ -44,18 +44,21 @@ body{
 .nav ul{
     gap: 75px;
     padding-right: 30px;
-
 }
 
 .nav ul,li,a{
     list-style-type: none;
     text-decoration: none;
-    color: #FAE1DF
+    color: #FAE1DF;
+}
+
+li{
+    font-size: 1.5em;
 }
 
 /*Main Styling*/
 .main{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .main a{
@@ -65,6 +68,18 @@ body{
 /*Footer Styling*/
 .footer{
     text-align: center;
+    padding: 20px;
+}
+
+/*Hover Styling*/
+.hover{
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+
+.hover:hover{
+    transform: scale(1.10);
 }
 
 /*Responsive*/
@@ -74,6 +89,10 @@ body{
         width: 100vw;
         justify-content: center;
         gap: 20px;
+    }
+
+    .header{
+        position: static;
     }
 
     .nav ul{
